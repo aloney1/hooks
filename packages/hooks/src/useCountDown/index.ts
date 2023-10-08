@@ -60,8 +60,7 @@ const useCountdown = (options: Options = {}) => {
       setTimeLeft(0);
       return;
     }
-
-    // 立即执行一次
+    
     setTimeLeft(calcLeft(target));
 
     const timer = setInterval(() => {
